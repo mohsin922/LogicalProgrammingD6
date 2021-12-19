@@ -1,32 +1,52 @@
 ﻿using System;
+using NodaTime;
 
 namespace LogicalProgramming
 {
-
-    public class ReverseNumber
+    public class Stopwatch
     {
-        /**
-         * reverse method is used to reverse the number by modulo operator
-         * remainder is stored and used in next iteration
-         */
-        public void reverse()
+        static Instant  start;
+        static Instant stop;
+        public static void setStart()
         {
-            int digit;
-            int reverse = 0;
-            Console.WriteLine("Enter a number to reverse : ");
-            int number = Convert.ToInt32(Console.ReadLine());
-            while (number > 0)
+            
+            while (true)
             {
-                digit = number % 10;
-                number = number / 10;
-                reverse = reverse * 10 + digit;
+                Console.WriteLine("Enter START to start the timer : ");
+                String startTime = Convert.ToString(Console.ReadLine());
+                if (startTime.Equals("START"))
+                {
+                    start = Instant.now();
+                    break;
+                }
             }
-            Console.WriteLine(reverse);
+        }
+        
+        public static void setStop()
+        {
+            
+            while (true)
+            {
+                Console.WriteLine("Enter STOP to stop the timer : ");
+                String stopTimer = Convert.ToString(Console.ReadLine());
+                if (stopTimer.Equals("STOP"))
+                {
+                    stop = Instant.now;
+                    break;
+                }
+            }
+        }
+        public void getTime()
+        {
+            setStart();
+            setStop();
+            long timeElapsed = Duration.between(start, stop).toMillis();
+            Console.WriteLine("Timer Count : " + timeElapsed + " milliseconds");
         }
         public static void Main(String[] args)
         {
-            ReverseNumber reverseNumberObj = new ReverseNumber();
-            reverseNumberObj.reverse();
+            Stopwatch stopwatchObj = new Stopwatch();
+            stopwatchObj.getTime();
         }
     }
 }

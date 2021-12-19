@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "yAiz3hskv/U9Q7LysRl24IVJ2qpYlacR3zVf3qO1MEN53j+FqpH9DHvgOW0qHd1P9YCt5g5Ootrtm7WSxAM/0A==",
+  "dgSpecHash": "jINrXw5n+yCmOvKuFJ4JUJBrosGY1syzxPzwoura5Nl9q/KHEatX2zA2hVkAvtUMrdC3ZozmxJJnRMw1WBK3Yw==",
   "success": true,
   "projectFilePath": "C:\\Users\\MOHSIN ZAHOOR PEER\\Desktop\\LogicalProgramming\\LogicalProgramming\\LogicalProgramming.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\MOHSIN ZAHOOR PEER\\.nuget\\packages\\nodatime\\3.0.9\\nodatime.3.0.9.nupkg.sha512",
+    "C:\\Users\\MOHSIN ZAHOOR PEER\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512"
+  ],
   "logs": []
 }
