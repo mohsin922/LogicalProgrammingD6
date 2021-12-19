@@ -1,0 +1,14 @@
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\LogicalProgramming\LogicalProgramming\bin\Debug\netcoreapp3.1\LogicalProgramming.exe
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\LogicalProgramming\LogicalProgramming\bin\Debug\netcoreapp3.1\LogicalProgramming.deps.json
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\LogicalProgramming\LogicalProgramming\bin\Debug\netcoreapp3.1\LogicalProgramming.runtimeconfig.json
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\LogicalProgramming\LogicalProgramming\bin\Debug\netcoreapp3.1\LogicalProgramming.runtimeconfig.dev.json
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\LogicalProgramming\LogicalProgramming\bin\Debug\netcoreapp3.1\LogicalProgramming.dll
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\LogicalProgramming\LogicalProgramming\bin\Debug\netcoreapp3.1\LogicalProgramming.pdb
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\LogicalProgramming\LogicalProgramming\obj\Debug\netcoreapp3.1\LogicalProgramming.csproj.AssemblyReference.cache
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\LogicalProgramming\LogicalProgramming\obj\Debug\netcoreapp3.1\LogicalProgramming.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\LogicalProgramming\LogicalProgramming\obj\Debug\netcoreapp3.1\LogicalProgramming.AssemblyInfoInputs.cache
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\LogicalProgramming\LogicalProgramming\obj\Debug\netcoreapp3.1\LogicalProgramming.AssemblyInfo.cs
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\LogicalProgramming\LogicalProgramming\obj\Debug\netcoreapp3.1\LogicalProgramming.csproj.CoreCompileInputs.cache
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\LogicalProgramming\LogicalProgramming\obj\Debug\netcoreapp3.1\LogicalProgramming.dll
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\LogicalProgramming\LogicalProgramming\obj\Debug\netcoreapp3.1\LogicalProgramming.pdb
+C:\Users\MOHSIN ZAHOOR PEER\Desktop\LogicalProgramming\LogicalProgramming\obj\Debug\netcoreapp3.1\LogicalProgramming.genruntimeconfig.cache
