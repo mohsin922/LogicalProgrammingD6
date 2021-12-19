@@ -2,31 +2,37 @@
 
 namespace LogicalProgramming
 {
-    public class Fibonacci
+    public class PerfectNumber
     {
-        /**
-         * Sum of previous two integers is updated and stored in another variable
-         * updated variable is used for the logic till the range of series
-         */
-        public void fibonacciSeries()
+        public void divisors()
         {
-            Console.WriteLine("Enter number up to required series : ");
-            int fibRange = Convert.ToInt32(Console.ReadLine());
-            int num1 = 0;
-            int num2 = 1;
-            int updateNum;
-            for (int i = 0; i < fibRange; i++)
+            int updateNum = 0;
+            
+            Console.WriteLine("Enter a number to check is perfect number or not : ");
+            int number = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i < number; i++)
             {
-                Console.WriteLine(num1 + " ");
-                updateNum = num1 + num2;
-                num1 = num2;
-                num2 = updateNum;
+                if (number % i == 0)
+                {
+                    updateNum += i;
+                    Console.WriteLine(i + " ");
+                }
+            }
+            if (updateNum == number)
+            {
+                Console.WriteLine("\n" + number + " = " + updateNum);
+                Console.WriteLine("It is a perfect number");
+            }
+            else
+            {
+                Console.WriteLine("\n" + number + " != " + updateNum);
+                Console.WriteLine("It is not a perfect number");
             }
         }
         public static void Main(String[] args)
         {
-            Fibonacci fibSeriesObj = new Fibonacci();
-            fibSeriesObj.fibonacciSeries();
+            PerfectNumber perfectNumberObj = new PerfectNumber();
+            perfectNumberObj.divisors();
         }
     }
 }
