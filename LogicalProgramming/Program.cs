@@ -3,44 +3,30 @@
 namespace LogicalProgramming
 {
 
-    public class PrimeNumber
+    public class ReverseNumber
     {
         /**
-         * primeNumber is a method to check it is a prime number or not
-         * divide the number with all the previous numbers to check
-         * 0 and 1 are not included in the loop
+         * reverse method is used to reverse the number by modulo operator
+         * remainder is stored and used in next iteration
          */
-        public void primeNumber()
+        public void reverse()
         {
-            Boolean isPrime = true;
-            Console.WriteLine("Enter a number to check it is a prime number or not : ");
-            int primeCheck = Convert.ToInt32(Console.ReadLine());
-            for (int i = 2; i < primeCheck; i++)
+            int digit;
+            int reverse = 0;
+            Console.WriteLine("Enter a number to reverse : ");
+            int number = Convert.ToInt32(Console.ReadLine());
+            while (number > 0)
             {
-                if (primeCheck % i == 0)
-                {
-                    Console.WriteLine(primeCheck + " is not a prime number");
-                    isPrime = false;
-                    break;
-                }
+                digit = number % 10;
+                number = number / 10;
+                reverse = reverse * 10 + digit;
             }
-            if (primeCheck == 0)
-            {
-                Console.WriteLine(primeCheck + " is not a valid number");
-            }
-            else if (primeCheck == 1)
-            {
-                Console.WriteLine(primeCheck + " is neither prime nor composite number");
-            }
-            else if (isPrime)
-            {
-                Console.WriteLine(primeCheck + " is a prime number");
-            }
+            Console.WriteLine(reverse);
         }
         public static void Main(String[] args)
         {
-            PrimeNumber primeNumberObj = new PrimeNumber();
-            primeNumberObj.primeNumber();
+            ReverseNumber reverseNumberObj = new ReverseNumber();
+            reverseNumberObj.reverse();
         }
     }
 }
