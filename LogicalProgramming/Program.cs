@@ -2,37 +2,45 @@
 
 namespace LogicalProgramming
 {
-    public class PerfectNumber
+
+    public class PrimeNumber
     {
-        public void divisors()
+        /**
+         * primeNumber is a method to check it is a prime number or not
+         * divide the number with all the previous numbers to check
+         * 0 and 1 are not included in the loop
+         */
+        public void primeNumber()
         {
-            int updateNum = 0;
-            
-            Console.WriteLine("Enter a number to check is perfect number or not : ");
-            int number = Convert.ToInt32(Console.ReadLine());
-            for (int i = 1; i < number; i++)
+            Boolean isPrime = true;
+            Console.WriteLine("Enter a number to check it is a prime number or not : ");
+            int primeCheck = Convert.ToInt32(Console.ReadLine());
+            for (int i = 2; i < primeCheck; i++)
             {
-                if (number % i == 0)
+                if (primeCheck % i == 0)
                 {
-                    updateNum += i;
-                    Console.WriteLine(i + " ");
+                    Console.WriteLine(primeCheck + " is not a prime number");
+                    isPrime = false;
+                    break;
                 }
             }
-            if (updateNum == number)
+            if (primeCheck == 0)
             {
-                Console.WriteLine("\n" + number + " = " + updateNum);
-                Console.WriteLine("It is a perfect number");
+                Console.WriteLine(primeCheck + " is not a valid number");
             }
-            else
+            else if (primeCheck == 1)
             {
-                Console.WriteLine("\n" + number + " != " + updateNum);
-                Console.WriteLine("It is not a perfect number");
+                Console.WriteLine(primeCheck + " is neither prime nor composite number");
+            }
+            else if (isPrime)
+            {
+                Console.WriteLine(primeCheck + " is a prime number");
             }
         }
         public static void Main(String[] args)
         {
-            PerfectNumber perfectNumberObj = new PerfectNumber();
-            perfectNumberObj.divisors();
+            PrimeNumber primeNumberObj = new PrimeNumber();
+            primeNumberObj.primeNumber();
         }
     }
 }
