@@ -4,36 +4,34 @@ using System.Collections.Generic;
 
 namespace LogicalProgramming
 {
-    class GregorianCalendar
+    class TemperatureConvertor
     {
-        public static void Dayofweek(int d, int m, int y)
+        public void Fah(double C)
         {
-            List<string> day = new List<string>() { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
-
-            int y0, x, m0, d0;
-            y0 = y - (14 - m) / 12;
-            x = y0 + y0 / 4 - y0 / 100 + y0 / 400;
-            m0 = m + 12 * ((14 - m) / 12) - 2;
-            d0 = (d + x + 31 * m0 / 12) % 7;
-            Console.WriteLine("week day of entered date is {0}", day[d0]);
-
+            double F;
+            F = (C * 1.8) + 32;
+            Console.WriteLine("temperature in Fahrenheit:{0}", F);
+        }
+        public void Cel(double FH)
+        {
+            double Ce;
+            Ce = ((FH - 32)*5/9 );
+            Console.WriteLine("Temperature in Celsius : {0}", Ce);
         }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter day : ");
-            int d = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter temperature in deg C to get in Fahrenheit ");
+            double C = Convert.ToDouble(Console.ReadLine());
+            TemperatureConvertor u = new TemperatureConvertor();
+            u.Fah(C);
 
-            Console.Write("Enter month: ");
-            int m = Convert.ToInt32(Console.ReadLine());
-
-            Console.Write("Enter year: ");
-            int y = Convert.ToInt32(Console.ReadLine());
-
-
-            GregorianCalendar.Dayofweek(d, m, y);
+            Console.WriteLine("Enter temperature in deg F to get in Celsius");
+            double FH = Convert.ToDouble(Console.ReadLine());
+            TemperatureConvertor s = new TemperatureConvertor();
+            s.Cel(FH);
         }
     }
 }
