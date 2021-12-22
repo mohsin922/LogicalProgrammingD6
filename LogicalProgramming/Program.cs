@@ -1,43 +1,53 @@
 ﻿using System;
-
 namespace LogicalProgramming
 {
 
-    public class CouponNumber
-    {
-        
-        static int input;
+	public class VendingMachine
+	{
+		// total is for calculating total notes
+		static int i = 0;
+		static int total = 0;
 
-        public static void Main(String[] args)
-        {
-            userInput();
-            distinctCoupon(input);
-        }
+		static int[] notes = { 1000, 500, 100, 50, 10, 5, 2, 1 };
+		static int money;
 
-        public static void userInput()
-        {
-            Console.WriteLine("Enter how many unique Coupons do you want");
+		public static int calculate(int money, int[] notes)
+		{
+			
+			int rem;
+			if (money == 0)
+			{
+				return -1;
+			}
+			else
+			{
+				if (money >= notes[i])
+				{
+					
+					int calculateNotes = money / notes[i];
+					rem = money % notes[i];
+					money = rem;
+					total += calculateNotes;
+					Console.WriteLine(notes[i] + " Notes -------> " + calculateNotes);
+				}
+				i++;
+				return calculate(money, notes);
+			}
+		}
 
-            input = Convert.ToInt32(Console.ReadLine());
-        }
+		public static void Main(String[] args)
+		{
+			
 
-        public static void generateCoupons()
-        {
-            Random rand = new Random();
-            double num = rand.NextDouble();
-            double coupon = Math.Floor(num * 1000000);
-            Console.WriteLine((int)coupon);
-        }
+			//ask the user enter the money
+			Console.WriteLine("Enter the Amount:");
+			money = Convert.ToInt32(Console.ReadLine());
 
-        public static void distinctCoupon(int a)
-        {
-           Console.WriteLine("Unique Coupons are :- ");
-            while (a > 0)
-            {
-                generateCoupons();
-                a--;
-            }
-        }
-    }
+			// Creating The Object of Vending MAchine class
+			VendingMachine.calculate(money, notes);
+			Console.WriteLine("Total Number of Notes are :" + total);
+		}
+	}
+
 
 }

@@ -41,6 +41,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.15.0, )"
+            },
             "NodaTime": {
               "target": "Package",
               "version": "[3.0.9, )"

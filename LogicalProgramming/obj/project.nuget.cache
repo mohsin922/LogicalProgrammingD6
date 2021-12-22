@@ -1,11 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "jINrXw5n+yCmOvKuFJ4JUJBrosGY1syzxPzwoura5Nl9q/KHEatX2zA2hVkAvtUMrdC3ZozmxJJnRMw1WBK3Yw==",
+  "dgSpecHash": "Gn2no8ZWrhXZiJiLP6oqt7VwO44oEgB12j4/jC/ec3H9pP8Hko5FrAa6jDwWR2RHwJFjI9oNta70ijskt2H+7g==",
   "success": true,
   "projectFilePath": "C:\\Users\\MOHSIN ZAHOOR PEER\\Desktop\\LogicalProgramming\\LogicalProgramming\\LogicalProgramming.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\MOHSIN ZAHOOR PEER\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\MOHSIN ZAHOOR PEER\\.nuget\\packages\\microsoft.identitymodel.logging\\6.15.0\\microsoft.identitymodel.logging.6.15.0.nupkg.sha512",
+    "C:\\Users\\MOHSIN ZAHOOR PEER\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.15.0\\microsoft.identitymodel.tokens.6.15.0.nupkg.sha512",
     "C:\\Users\\MOHSIN ZAHOOR PEER\\.nuget\\packages\\nodatime\\3.0.9\\nodatime.3.0.9.nupkg.sha512",
-    "C:\\Users\\MOHSIN ZAHOOR PEER\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512"
+    "C:\\Users\\MOHSIN ZAHOOR PEER\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512",
+    "C:\\Users\\MOHSIN ZAHOOR PEER\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }
