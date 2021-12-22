@@ -1,53 +1,39 @@
 ﻿using System;
+using System.Collections.Generic;
+
+
 namespace LogicalProgramming
 {
+    class GregorianCalendar
+    {
+        public static void Dayofweek(int d, int m, int y)
+        {
+            List<string> day = new List<string>() { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
 
-	public class VendingMachine
-	{
-		// total is for calculating total notes
-		static int i = 0;
-		static int total = 0;
+            int y0, x, m0, d0;
+            y0 = y - (14 - m) / 12;
+            x = y0 + y0 / 4 - y0 / 100 + y0 / 400;
+            m0 = m + 12 * ((14 - m) / 12) - 2;
+            d0 = (d + x + 31 * m0 / 12) % 7;
+            Console.WriteLine("week day of entered date is {0}", day[d0]);
 
-		static int[] notes = { 1000, 500, 100, 50, 10, 5, 2, 1 };
-		static int money;
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter day : ");
+            int d = Convert.ToInt32(Console.ReadLine());
 
-		public static int calculate(int money, int[] notes)
-		{
-			
-			int rem;
-			if (money == 0)
-			{
-				return -1;
-			}
-			else
-			{
-				if (money >= notes[i])
-				{
-					
-					int calculateNotes = money / notes[i];
-					rem = money % notes[i];
-					money = rem;
-					total += calculateNotes;
-					Console.WriteLine(notes[i] + " Notes -------> " + calculateNotes);
-				}
-				i++;
-				return calculate(money, notes);
-			}
-		}
+            Console.Write("Enter month: ");
+            int m = Convert.ToInt32(Console.ReadLine());
 
-		public static void Main(String[] args)
-		{
-			
-
-			//ask the user enter the money
-			Console.WriteLine("Enter the Amount:");
-			money = Convert.ToInt32(Console.ReadLine());
-
-			// Creating The Object of Vending MAchine class
-			VendingMachine.calculate(money, notes);
-			Console.WriteLine("Total Number of Notes are :" + total);
-		}
-	}
+            Console.Write("Enter year: ");
+            int y = Convert.ToInt32(Console.ReadLine());
 
 
+            GregorianCalendar.Dayofweek(d, m, y);
+        }
+    }
 }
